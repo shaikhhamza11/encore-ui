@@ -1,0 +1,41 @@
+/* Css Reset */
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: inherit;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 20rem;
+}
+
+/* Css Variables */
+/* Defining all the main variables in root */
+:root {
+  /* colors */
+  --main-bg-color: #f4f4f4;
+  --main-text-color: #333;
+  --primary-color: #424874;
+  --secondary-color: #a6b1e1;
+  --txt-primary: #dcd6f7;
+  --txt-secondary: #d1d4e4;
+  --txt-dark: #333;
+  --txt-light: #f8f9ff;
+  /* padding and margin */
+  --padding-small: 0.5rem;
+  --padding-medium: 1rem;
+  --padding-large: 1.5rem;
+  --padding-extra-large: 2rem;
+  --margin-small: 0.5rem;
+  --margin-medium: 1rem;
+  --margin-large: 1.5rem;
+  --margin-extra-large: 2rem;
+}
