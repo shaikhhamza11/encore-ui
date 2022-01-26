@@ -38,4 +38,9 @@ html {
 
 body {
   font-size: 20px;
+  width: 50%;
+}
+
+.grid {
+  display: grid;
 }
