@@ -5,53 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Encore UI</title>
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     <link rel="stylesheet" href="../css/encore.css" />
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="navbar-brand"><a href="#">Encore UI</a></div>
-      <a href="#" class="hamburger" id="toggleButton">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </a>
-      <div class="navbar-links-container">
-        <ul>
-          <li class="navbar-links"><a href="#">Home</a></li>
-          <li class="navbar-links"><a href="#">About</a></li>
-          <li class="navbar-links"><a href="#">Services</a></li>
-        </ul>
+    <div class="grid-wrapper">
+      <header class="header"><a href="../index.html">Encore UI</a></header>
+      <aside>
+        <nav>
+          <ul>
+            <li class="component-list">
+              <a class="active">Components</a>
+            </li>
+            <li class="component-list"><a href="#">Installation</a></li>
+            <li class="component-list">
+              <a href="../documents/html/navbar.html">Navbar</a>
+            </li>
+            <li class="component-list"><a href="#">Buttons</a></li>
+            <li class="component-list"><a href="#">Inputs</a></li>
+            <li class="component-list"><a href="#">Alert</a></li>
+            <li class="component-list"><a href="#">Badges</a></li>
+            <li class="component-list"><a href="#">Card</a></li>
+            <li class="component-list"><a href="#">Dummy</a></li>
+            <li class="component-list"><a href="#">Dummy</a></li>
+            <li class="component-list"><a href="#">Dummy</a></li>
+            <li class="component-list"><a href="#">Dummy</a></li>
+            <li class="component-list"><a href="#">Dummy</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <div class="main-section">
+        <!-- Installation -->
+        <h1>Installation</h1>
+        <p>To use this library please paste this code in your html</p>
+        <p>Please include the javascript also</p>
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%2856%2C128%2C135%2C1%29&t=vscode&wt=none&l=auto&width=700&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522..%252Fcomponents%252Findex.css%2522%2520%252F%253E%250A%2520%2520%2520%2520%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522..%252Fcomponents%252Findex.css%2522%2520%252F%253E%250A%2520%2520%2520%2520%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522..%252Fcomponents%252Findex.css%2522%2520%252F%253E%250A"
+          sandbox="allow-scripts allow-same-origin"
+          class="code-frame"
+        >
+        </iframe>
       </div>
-    </nav>
-    <!-- Buttons -->
-    <section class="container">
-      <div>
-        <h1 class="txt-center">Button Container</h1>
-      </div>
-      <div class="btn-container">
-        <button class="btn">Button</button>
-        <button class="btn btn-small">small</button>
-        <button class="btn btn-large">large</button>
-        <button class="btn btn-primary">Primary</button>
-        <button class="btn btn-secondary">Secondary</button>
-        <button class="btn btn-success">Success</button>
-        <button class="btn btn-danger">Failure</button>
-        <button class="btn btn-light">Light</button>
-        <button class="btn btn-dark">Dark</button>
-        <button class="btn btn-outline-primary">Outline</button>
-        <button class="btn btn-floating">+</button>
-        <button class="btn btn-floating-danger">X</button>
-      </div>
-    </section>
-
-    <!-- Inputs -->
-    <section class="container">
-      <div>
-        <h1 class="txt-center">Input Container</h1>
-      </div>
-      <div class="input-container"></div>
-    </section>
+    </div>
   </body>
-  <script src="/script.js"></script>
 </html>
