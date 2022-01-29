@@ -5,8 +5,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Encore UI</title>
+    <script
+      src="https://kit.fontawesome.com/ea8d1510f0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
     <link rel="stylesheet" href="../css/style.css" />
   </head>
-  <body></body>
-  <script src="/script.js"></script>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <a href="#">Encore UI</a>
+      </div>
+      <a href="#" class="hamburger" id="toggleButton">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links-container">
+        <ul>
+          <li class="navbar-links"><a href="#">Home</a></li>
+          <li class="navbar-links"><a href="#">Documentation</a></li>
+          <li class="navbar-links"><a href="#">Contribute</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- header -->
+    <header class="hero">
+      <img class="hero-img" src="/assests/css.svg" />
+      <h1 class="hero-heading">EncoreUI</h1>
+      <h2>
+        Build
+        <span
+          class="txt-type"
+          data-wait="1000"
+          data-words='["Responsive","Faster","Lightweight"]'
+        ></span>
+        UI
+      </h2>
+      <p>
+        A free,opensource library which helps you build responsive website with
+        ready to use components. Spend less time on css and focus more on code
+      </p>
+    </header>
+
+    <!-- Section -->
+    <div class="section">
+      <div class="container container-center">
+        <button class="btn btn-primary"><a href="#"></a> Get Started</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <h1>Why EncoreUI?</h1>
+      <div class="about">
+        <img src="../assests/responsive.svg" alt="loading" />
+        <div class="about-grid">
+          <div>
+            <h1>Responsive</h1>
+          </div>
+          <div>
+            <h1>Free</h1>
+          </div>
+          <div>
+            <h1>Opensource</h1>
+          </div>
+          <div>
+            <h1>Lightweight</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+      <h1>Connect with me on</h1>
+      <div class="footer-container">
+        <a class="link" target="_blank" href="https://github.com/shaikhhamza11">
+          <i class="fab fa-github fa-3x mt-1"></i>
+        </a>
+        <a
+          class="link"
+          target="_blank"
+          href="https://www.linkedin.com/in/shaikhhamza11"
+        >
+          <i class="fab fa-linkedin fa-3x mt-1"></i>
+        </a>
+        <div>
+          <p>
+            Copyright &copy; All rights reserved ; Made by
+            <span>
+              <a href="https://www.instagram.com/shaikh_hamza11" target="_blank"
+                >Hamza Shaikh</a
+              >
+            </span>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="../js/typewriter.js"></script>
+  <script src="../js/script.js"></script>
 </html>
