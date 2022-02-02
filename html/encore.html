@@ -5,12 +5,114 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Encore</title>
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <link rel="stylesheet" href="../css/encore.css" />
   </head>
   <body>
     <div class="grid-wrapper">
-      <header></header>
-      <aside></aside>
-      <main></main>
+      <div class="components">
+        <h1><a href="../index.html">Encore</a></h1>
+        <nav class="left-nav">
+          <ul class="components-lists pt-2">
+            <!-- <li class="components-list">
+              <a>Components</a>
+            </li> -->
+            <li class="component-list"><a href="#">Installation</a></li>
+            <li class="component-list">
+              <a href="#navbar">Navbar</a>
+            </li>
+            <li class="component-list"><a href="#">Buttons</a></li>
+            <li class="component-list"><a href="#">Inputs</a></li>
+            <li class="component-list"><a href="#">Alert</a></li>
+            <li class="component-list"><a href="#">Badges</a></li>
+            <li class="component-list"><a href="#">Card</a></li>
+            <li class="component-list"><a href="#">Dummy</a></li>
+            <li class="component-list"><a href="#">Dummy</a></li>
+            <li class="component-list"><a href="#">Dummy</a></li>
+            <li class="component-list"><a href="#">Dummy</a></li>
+            <li class="component-list"><a href="#">Dummy</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <main class="main-section">
+        <div id="installation">
+          <h1 class="m-2">Installation</h1>
+          <p class="m-5">
+            Copy the following css link in the head tag of your HTML document
+            and the JS link before the closing body tag and you are good to go.
+          </p>
+          <pre class="m-2-0"><code class="hljs xml">
+            <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://https://encoreui.netlify.app/components/index.css</span> /&gt;</span>
+            
+            <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://encoreui.netlify.app/script.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+            
+            </code></pre>
+          <p class="m-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+            incidunt laudantium voluptatibus blanditiis repellendus officiis
+            autem quas quaerat tenetur nisi.
+          </p>
+        </div>
+        <div id="navbar">
+          <h1 class="m-2">Navigation</h1>
+          <p class="m-3">Resposive Navbar with hamburger</p>
+          <nav class="navbar ml-2">
+            <div class="navbar-brand">
+              <a>Encore UI</a>
+            </div>
+            <a class="hamburger" id="toggleButton">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </a>
+            <div class="navbar-links-container">
+              <ul>
+                <li class="navbar-links"><a>Home</a></li>
+                <li class="navbar-links">
+                  <a>Documentation</a>
+                </li>
+                <li class="navbar-links">
+                  <a>Contribute</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <pre class="m-2-0"><code class="hljs">
+            &lt;nav class="navbar"&gt;
+              &lt;div class="navbar-brand"&gt;
+               &lt;a&gt;Encore UI&lt;/a&gt;
+              &lt;/div&gt;
+            &lt;a  class="hamburger" id="toggleButton"&gt;
+              &lt;span class="bar"&gt;&lt;/span&gt;
+              &lt;span class="bar"&gt;&lt;/span&gt;
+              &lt;span class="bar"&gt;&lt;/span&gt;
+            &lt;/a&gt;
+            &lt;div class="navbar-links-container"&gt;
+              &lt;ul&gt;
+                &lt;li class="navbar-links"&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li class="navbar-links"&gt;
+                  &lt;a &gt;Documentation&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="navbar-links"&gt;
+                  &lt;a  target="_blank"
+                    &gt;Contribute&lt;/a&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/nav&gt;  
+            </code></pre>
+        </div>
+      </main>
     </div>
+
+    <script src="../js/script.js"></script>
   </body>
 </html>
