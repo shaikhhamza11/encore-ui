@@ -4,7 +4,6 @@
   display: grid;
   height: 100vh;
   grid-template-columns: 23rem 1fr;
-  /* grid-template-rows: 70spx auto; */
   grid-template-areas:
     "header main"
     "header main";
@@ -23,14 +22,6 @@
   right: 0;
   top: 0;
   bottom: 0; */
-  /* overflow-y: auto; */
-}
-.components .left-nav {
-  /* width: 25%;
-  height: calc(100vh);
-  position: fixed;
-  top: 0;
-  left: 0; */
 }
 
 .components h1 a {
@@ -42,7 +33,6 @@
   font-size: 5rem;
 }
 .components h1 a:hover {
-  /* content: "Click Me!"; */
   transition: 0.5s;
   text-shadow: 0 13.35px 8.896px #c4b59d, 0 -2px 1px #fafafa;
 }
