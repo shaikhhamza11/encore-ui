@@ -6,23 +6,9 @@
   --color-light: #f6f2f2;
   --txt-dark: #333;
   --txt-light: #f8f9ff;
-  /* padding and margin */
-  /* --padding-small: 0.5rem;
-    --padding-medium: 1rem;
-    --padding-large: 1.5rem;
-    --padding-extra-large: 2rem;
-    --margin-small: 0.5rem;
-    --margin-medium: 1rem;
-    --margin-large: 1.5rem;
-    --margin-extra-large: 2rem; */
+
   --container-width: 90%;
-  /* font-size */
-  /* --txt-small: 1rem;
-    --txt-medium: 2rem;
-    --txt-large: 3rem;
-    --txt-ex-large: 4rem; */
-  /* Screen size */
-  /* Mobile(xs),Tablet(sm),Laptop(lg) */
+
   --xs: 480px;
   --sm: 640px;
   --md: 768px;
