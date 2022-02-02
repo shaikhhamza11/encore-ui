@@ -1,7 +1,7 @@
-/* Css Variables */
 @import url("./variables.css");
 @import url("./cssreset.css");
 @import url("./utilities.css");
+@import url("../components/index.css");
 /* Navbar  */
 .navbar {
   display: flex;
