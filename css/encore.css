@@ -99,6 +99,18 @@ main {
   top: 66.2rem;
   left: 73rem;
 }
+/* button example */
+.btn-floating-example {
+  border-radius: var(--border-circle);
+  padding: 0.5rem;
+  width: 3rem;
+}
+.btn-floating-danger-example {
+  border-radius: var(--border-circle);
+  padding: 0.5rem;
+  width: 3rem;
+  background-color: #dc2626;
+}
 
 @media only screen and (max-width: 600px) {
   body {
