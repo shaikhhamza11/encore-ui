@@ -5,15 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Encore</title>
+
     <link
       rel="stylesheet"
       href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"
     />
+    <link rel="stylesheet" href="../css/encore.css" />
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+
     <script>
       hljs.highlightAll();
     </script>
-    <link rel="stylesheet" href="../css/encore.css" />
+    <script
+      src="https://kit.fontawesome.com/ea8d1510f0.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="grid-wrapper">
@@ -26,8 +32,8 @@
               <a href="#navbar">Navbar</a>
             </li>
             <li class="component-list"><a href="#buttons">Buttons</a></li>
+            <li class="component-list"><a href="#Alert">Alert</a></li>
             <li class="component-list"><a href="#">Inputs</a></li>
-            <li class="component-list"><a href="#">Alert</a></li>
             <li class="component-list"><a href="#">Badges</a></li>
             <li class="component-list"><a href="#">Card</a></li>
             <li class="component-list"><a href="#">Dummy</a></li>
@@ -145,6 +151,123 @@
             &lt;button class="btn btn-floating-danger"&gt;X&lt;/button&gt;
             &lt;button class="btn btn-dark btn-small"&gt;small-dark&lt;/button&gt;
             </code></pre>
+        </div>
+        <div id="alert">
+          <h1 class="m-2">Alert</h1>
+          <div class="alert-container">
+            <div class="alert">
+              <div class="alert-icon">
+                <i class="fas fa-check-square"></i>
+              </div>
+              <div class="alert-content">Alert</div>
+              <div class="alert-close">
+                <i class="far fa-times-circle"></i>
+              </div>
+            </div>
+            <div class="alert alert-success">
+              <div class="alert-icon">
+                <i class="fas fa-check-square"></i>
+              </div>
+              <div class="alert-content">Success</div>
+              <div class="alert-close">
+                <i class="far fa-times-circle"></i>
+              </div>
+            </div>
+            <div class="alert alert-danger">
+              <div class="alert-icon">
+                <i class="fas fa-skull-crossbones"></i>
+              </div>
+              <div class="alert-content">Danger</div>
+              <div class="alert-close">
+                <i class="far fa-times-circle"></i>
+              </div>
+            </div>
+            <div class="alert alert-info">
+              <div class="alert-icon">
+                <i class="fas fa-check-square"></i>
+              </div>
+              <div class="alert-content">Song added to queue</div>
+              <div class="alert-close">
+                <i class="far fa-times-circle"></i>
+              </div>
+            </div>
+            <div class="alert alert-warning">
+              <div class="alert-icon">
+                <i class="fas fa-exclamation-circle"></i>
+              </div>
+              <div class="alert-content">Warning</div>
+              <div class="alert-close">
+                <i class="far fa-times-circle"></i>
+              </div>
+            </div>
+            <div class="alert alert-dark">
+              <div class="alert-icon">
+                <i class="fas fa-exclamation-circle"></i>
+              </div>
+              <div class="alert-content">Dark alert</div>
+              <div class="alert-close">
+                <i class="far fa-times-circle"></i>
+              </div>
+            </div>
+          </div>
+          <pre class="m-2-0">
+            <code class="hljs">
+            &lt;div class="alert"&gt;
+              &lt;div class="alert-icon"&gt;
+                &lt;i class="fas fa-check-square"&gt;&lt;/i&gt;
+              &lt;/div&gt;
+              &lt;div class="alert-content"&gt;Alert&lt;/div&gt;
+              &lt;div class="alert-close"&gt;
+                &lt;i class="far fa-times-circle"&gt;&lt;/i&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="alert alert-success"&gt;
+              &lt;div class="alert-icon"&gt;
+                &lt;i class="fas fa-check-square"&gt;&lt;/i&gt;
+              &lt;/div&gt;
+              &lt;div class="alert-content"&gt;Success&lt;/div&gt;
+              &lt;div class="alert-close"&gt;
+                &lt;i class="far fa-times-circle"&gt;&lt;/i&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="alert alert-danger"&gt;
+              &lt;div class="alert-icon"&gt;
+                &lt;i class="fas fa-skull-crossbones"&gt;&lt;/i&gt;
+              &lt;/div&gt;
+              &lt;div class="alert-content"&gt;Danger&lt;/div&gt;
+              &lt;div class="alert-close"&gt;
+                &lt;i class="far fa-times-circle"&gt;&lt;/i&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="alert alert-info"&gt;
+              &lt;div class="alert-icon"&gt;
+                &lt;i class="fas fa-check-square"&gt;&lt;/i&gt;
+              &lt;/div&gt;
+              &lt;div class="alert-content"&gt;Song added to queue&lt;/div&gt;
+              &lt;div class="alert-close"&gt;
+                &lt;i class="far fa-times-circle"&gt;&lt;/i&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="alert alert-warning"&gt;
+              &lt;div class="alert-icon"&gt;
+                &lt;i class="fas fa-exclamation-circle"&gt;&lt;/i&gt;
+              &lt;/div&gt;
+              &lt;div class="alert-content"&gt;Warning&lt;/div&gt;
+              &lt;div class="alert-close"&gt;
+                &lt;i class="far fa-times-circle"&gt;&lt;/i&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="alert alert-dark"&gt;
+              &lt;div class="alert-icon"&gt;
+                &lt;i class="fas fa-exclamation-circle"&gt;&lt;/i&gt;
+              &lt;/div&gt;
+              &lt;div class="alert-content"&gt;Dark alert&lt;/div&gt;
+              &lt;div class="alert-close"&gt;
+                &lt;i class="far fa-times-circle"&gt;&lt;/i&gt;
+              &lt;/div&gt;
+          &lt;/div&gt;              
+            </code>
+          </pre>
         </div>
       </main>
     </div>
