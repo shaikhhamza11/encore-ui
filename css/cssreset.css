@@ -6,9 +6,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Roboto";
   text-decoration: none;
-  /* color: var(--txt-light); */
 }
 
 html {
