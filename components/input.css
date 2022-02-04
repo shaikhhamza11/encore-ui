@@ -1,0 +1,54 @@
+@import url(../css/variables.css);
+
+input[type="text"] {
+  display: block;
+  width: 40rem;
+  height: 4rem;
+  background: transparent;
+  border: solid 1px #ccc;
+  transition: all 0.3s ease;
+  padding: 0 1.5rem;
+}
+
+.input-group {
+  width: 80%;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.input-group label {
+  position: absolute;
+  z-index: 3;
+  top: 13px;
+  left: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0 1rem;
+  color: #999;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+.input-group .styled-input:focus,
+.input-group .error-input:focus {
+  border: 2px solid var(--color-primary);
+  outline: none;
+}
+.input-group .styled-input:focus + label {
+  font-size: 1.1rem;
+  top: -5px;
+  background: var(--txt-light);
+  color: var(--txt-dark);
+  border: 2px solid var(--color-primary);
+}
+.input-group .error-input {
+  border: 2px solid var(--color-danger);
+}
+
+.input-group .error-input:focus + label {
+  font-size: 11px;
+  top: -5px;
+  background: var(--txt-light);
+  color: var(--txt-danger);
+  border: 2px solid var(--color-primary);
+}

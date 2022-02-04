@@ -4,10 +4,13 @@
   --color-secondary: #6fb3b8;
   --color-secondary-light: #badfe7;
   --color-light: #f6f2f2;
-  --txt-dark: #333;
+  --color-dark: #333;
   --txt-light: #f8f9ff;
   --bg-dark: #222;
   --bg-light: #f8f9ff;
+  --color-success: #25df72;
+  --color-danger: #ff4757;
+  --color-warning: #82be10;
 
   --container-width: 90%;
 
