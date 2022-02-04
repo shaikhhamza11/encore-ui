@@ -467,3 +467,8 @@
 .mr-4 {
   margin-right: var(--s4);
 }
+
+/* error-text */
+.error-text {
+  color: var(--color-danger);
+}
