@@ -472,3 +472,20 @@
 .error-text {
   color: var(--color-danger);
 }
+/* flex */
+.flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.justify-sb {
+  justify-content: space-between;
+}
+.justify-se {
+  justify-content: space-evenly;
+}
