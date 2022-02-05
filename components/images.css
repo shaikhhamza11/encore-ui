@@ -1,0 +1,18 @@
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.responsive-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.responsive-round-image {
+  border-radius: 50%;
+  width: 20rem;
+  height: 20rem;
+  justify-self: center;
+  align-self: center;
+}
