@@ -37,17 +37,17 @@
   background-color: #2563eb;
 }
 .btn-danger {
-  background-color: #dc2626;
+  background-color: var(--color-danger);
 }
 .btn-success {
-  background-color: #10b981;
+  background-color: var(--color-success);
 }
 .btn-light {
   background-color: var(--bg-white);
   color: var(--txt-dark);
 }
 .btn-dark {
-  background-color: var(--bg-dark);
+  background-color: var(--color-dark);
   color: var(--txt-light);
 }
 .btn-outline {
@@ -74,5 +74,5 @@
   width: 3rem;
 }
 .btn-floating-danger {
-  background-color: #dc2626;
+  background-color: var(--color-danger);
 }

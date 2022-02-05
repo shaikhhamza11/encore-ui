@@ -489,3 +489,9 @@
 .justify-se {
   justify-content: space-evenly;
 }
+.justify-sa {
+  justify-content: space-around;
+}
+.wrap {
+  flex-wrap: wrap;
+}
