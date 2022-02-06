@@ -38,7 +38,7 @@
             <li class="component-list"><a href="#badges">Badges</a></li>
             <li class="component-list"><a href="#images">Images</a></li>
             <li class="component-list"><a href="#">Card</a></li>
-            <li class="component-list"><a href="#">Grid</a></li>
+            <li class="component-list"><a href="#simplified-grid">Simplified Grid</a></li>
             <li class="component-list"><a href="#">Range</a></li>
             <li class="component-list"><a href="#">Utilities</a></li>
           </ul>
@@ -368,7 +368,7 @@
         </div>
         <div id="badges">
           <h1 class="m-4">Badges</h1>
-          <h3 class="m-4">Badges with Icon</h3>
+          <h2 class="m-4">Badges with Icon</h4>
           <div class="badge-container flex justify-sa align-center wrap">
             <div class="badge-wrapper">
               <span class="badge">3</span>
@@ -388,7 +388,7 @@
               <i class="fas fa-bell fa-2x"></i>
             </div>
           </div>
-          <h3 class="m-4">Badges with Avatar</h3>
+          <h2 class="m-4">Badges with Avatar</h2>
           <div class="badge-container flex justify-sa align-center wrap">
             <div class="badge-wrapper">
               <img
@@ -409,7 +409,7 @@
               <p>Offline</p>
             </div>
           </div>
-          <h3 class="m-4">Badges with Buttons</h3>
+          <h2 class="m-4">Badges with Buttons</h2>
           <div class="badge-container flex justify-sa align-center wrap">
             <div class="badge-wrapper">
               <button class="btn btn-danger">Danger</button>
@@ -512,7 +512,7 @@
         </div>
         <div id="modal">
           <h1 class="m-4">Modal</h1>
-          <div class="btn" id="show-modal">Show Modal</div>
+          <div class="btn " id="show-modal">Show Modal</div>
           <div class="modal-overlay" id="modal-toggle">
             <div class="modal-container p-2">
               <h1>Delete all items?</h1>
@@ -536,6 +536,54 @@
                   &LT/div>
                 &LT/div>
               &LT/div>
+            </code>
+          </pre>
+        </div>
+        <div id="simplified-grid">
+          <h1 class="m-4">Simplified Grid</h1>
+          <h2 class="center">Responsive Grid with two columns</h2>
+          <div class="grid-container lap-two mob-one m-3">
+            <div class="grid-content"></div>
+            <div class="grid-content"></div>
+          </div>
+          <h2 class="center">Responsive Grid with three columns</h2>
+            <div class="grid-container lap-three tab-two mob-one m-3">
+            
+            <div class="grid-content"></div>
+            <div class="grid-content"></div>
+            <div class="grid-content"></div>
+          </div>
+          <h2 class="center">Responsive Grid with four columns</h2>
+            <div class="grid-container lap-four tab-two mob-one m-3">
+            
+            <div class="grid-content"></div>
+            <div class="grid-content"></div>
+            <div class="grid-content"></div>
+            <div class="grid-content"></div>
+          </div>
+          <pre>
+            <code class="hljs">
+              &LT;!-- Two columns -->
+              &LT;div class="grid-container lap-two mob-one m-3">
+                &LT;div class="grid-content">&LT;/div>
+                &LT;div class="grid-content">&LT;/div>
+              &LT;/div>
+              
+              &LT;!-- Three columns -->
+              &LT;div class="grid-container lap-three tab-two mob-one m-3">
+                &LT;div class="grid-content">&LT;/div>
+                &LT;div class="grid-content">&LT;/div>
+                &LT;div class="grid-content">&LT;/div>
+              &LT;/div>
+              
+              &LT;!-- Four columns -->
+              &LT;div class="grid-container lap-four tab-two mob-one m-3">
+                &LT;div class="grid-content">&LT;/div>
+                &LT;div class="grid-content">&LT;/div>
+                &LT;div class="grid-content">&LT;/div>
+                &LT;div class="grid-content">&LT;/div>
+              &LT;/div>
+              
             </code>
           </pre>
         </div>

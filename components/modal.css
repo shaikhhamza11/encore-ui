@@ -28,6 +28,9 @@
 .modal-buttons {
   width: 100%;
 }
+#modal-buttons .btn {
+  margin-left: 4rem;
+}
 
 .modal-overlay.active {
   display: block;

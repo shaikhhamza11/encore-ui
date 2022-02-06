@@ -472,6 +472,10 @@
 .error-text {
   color: var(--color-danger);
 }
+/* center */
+.center {
+  text-align: center;
+}
 /* flex */
 .flex {
   display: flex;
