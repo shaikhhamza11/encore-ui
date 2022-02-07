@@ -1,8 +1,9 @@
 .alert-container {
   width: 90%;
+  border: 2px solid var(--color-primary);
 }
 .alert {
-  width: 100%;
+  width: 90%;
   padding: 1.5rem;
   position: relative;
   border-left: 0.8rem solid #bababa;
@@ -14,8 +15,7 @@
   text-align: left;
   font-size: 1.6rem;
   align-content: center;
-  margin-bottom: 1rem;
-  margin-left: 1rem;
+  margin: 2rem;
   font-weight: bold;
 }
 .alert .alert-icon {

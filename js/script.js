@@ -14,14 +14,24 @@ const modalConfirm = document.querySelector("#modal-confirm");
 const modalClose = document.querySelector("#modal-close");
 const modalToggle = document.querySelector("#modal-toggle")
 
-showModal.addEventListener("click", function(){
+showModal.addEventListener("click", ()=>{
     modalToggle.classList.toggle("active")
 })
 
-modalConfirm.addEventListener("click", function(){
+modalConfirm.addEventListener("click", ()=>{
     modalToggle.classList.toggle("active");
 })
 
-modalClose.addEventListener("click", function () {
+modalClose.addEventListener("click", () =>{
     modalToggle.classList.toggle("active");
 });
+
+
+// card dissmiss
+
+const cardDismiss  = document.querySelector('#card-dismiss')
+const btnDismiss = document.querySelector('#btn-dismiss')
+
+btnDismiss.addEventListener('click',(e)=>{
+ cardDismiss.classList.add('dismiss')   
+})

@@ -9,6 +9,7 @@
 }
 .badge-wrapper > i {
   color: var(--color-primary);
+  cursor: pointer;
 }
 .badge {
   font-size: 2rem;
