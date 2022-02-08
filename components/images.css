@@ -3,6 +3,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   border: 2px solid var(--color-primary);
+  width: 90%;
 }
 
 .responsive-image {

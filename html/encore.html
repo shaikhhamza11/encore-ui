@@ -642,19 +642,13 @@
               </code>
             </pre>
             
-            <!-- Images and text overlays -->
-            <div class="card-container lap-four tab-two mob-one m-2" >
+            <!-- Images card and badge -->
+            <div class="card-container lap-three mob-one m-2" >
               <div class="card image-card cards-shadow">
                 <h3 class="center fw-5">Image card</h3>
                 <img class="responsive-image"
                  src="../assests/peter-thomas-5aeNKDUaDmY-unsplash.jpg">
                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sed inventore debitis reiciendis esse culpa quia, obcaecati ipsum molestiae ad.</p>
-              </div>
-              <div class="card image-card text-overlay cards-shadow">
-                <h3 class="center fw-5">Image card</h3>
-                <img class="responsive-image"
-                 src="../assests/pexels-mnz-1598505.jpg">
-                 
               </div>
               <div class="card image-card image-badge cards-shadow">
                 <h3 class="center fw-5">Image card</h3>
@@ -676,10 +670,134 @@
               </div>
               
             </div>
-            <div class="card-container">
-              <div class="cards"></div>
+            <pre>
+              <code class="hljs">
+                &LT;div class="card image-card cards-shadow">
+  &LT;h3 class="center fw-5">Image card&LT;/h3>
+  &LT;img
+    class="responsive-image"
+    src="../assests/peter-thomas-5aeNKDUaDmY-unsplash.jpg"
+  />
+  &LT;p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sed
+    inventore debitis reiciendis esse culpa quia, obcaecati ipsum molestiae ad.
+  &LT;/p>
+&LT;/div>
+&LT;div class="card image-card text-overlay cards-shadow">
+  &LT;h3 class="center fw-5">Image card&LT;/h3>
+  &LT;img class="responsive-image" src="../assests/pexels-mnz-1598505.jpg" />
+&LT;/div>
+&LT;div class="card image-card image-badge cards-shadow">
+  &LT;h3 class="center fw-5">Image card&LT;/h3>
+  &LT;img class="responsive-image" src="../assests/pexels-mnz-1598505.jpg" />
+  &LT;p>Image card with badge&LT;/p>
+  &LT;p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam,
+    sapiente.
+  &LT;/p>
+  &LT;i class="fas fa-heart fa-4x">&LT;/i>
+&LT;/div>
+
+&LT;div class="card image-card cards-shadow" id="card-dismiss">
+  &LT;h3 class="center fw-5">
+    Image card
+    &LT;span>&LT;i class="far fa-times-circle fa-2x pr-1" id="btn-dismiss">&LT;/i>&LT;/span>
+  &LT;/h3>
+  &LT;img
+    class="responsive-image"
+    src="../assests/peter-thomas-5aeNKDUaDmY-unsplash.jpg"
+  />
+  &LT;p>Image card with dissmiss&LT;/p>
+  &LT;p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, dolorum?
+  &LT;/p>
+&LT;/div>
+
+              </code>
+            </pre>
+
+            <!-- Text overlays and badge -->
+            <h2 class="ml-2">Text overlays</h2>
+            <div class="card-container lap-two mob-one m-2">
+              <div class="card card-overlay cards-shadow mt-2 ">
+                <img 
+                src="../assests/pexels-mnz-1598505.jpg" alt="loading"
+                class="responsive-image"
+                >
+                <div class="text-overlay">
+                  <h1>Coming soon</h1>
+                </div>
+              </div>
+              <div class="card card-overlay cards-shadow m-2">
+                <img 
+                src="../assests/pexels-mnz-1598505.jpg" alt="loading"
+                class="responsive-image"
+                >
+                <div class="text-overlay">
+                  <h1>Out Of stock</h1>
+                  <p>Press the icon to get notified <i class="fas fa-bell fa-2x"></i></p>
+                  
+                </div>
+              </div>
             </div>
-        </div>
+            <pre><code class="hljs">
+              &LT;div class="card-container lap-two mob-one m-2">
+              &LT;div class="card card-overlay card-shadow mt-2 ">
+                &LT;img 
+                src="../assests/pexels-mnz-1598505.jpg" alt="loading"
+                class="responsive-image"
+                >
+                &LT;div class="text-overlay">
+                  &LT;h1>Coming soon&LT;/h1>
+                &LT;/div>
+              &LT;/div>
+              &LT;div class="card card-overlay card-shadow m-2">
+                &LT;img 
+                src="../assests/pexels-mnz-1598505.jpg" alt="loading"
+                class="responsive-image"
+                >
+                &LT;div class="text-overlay">
+                  &LT;h1>Out Of stock&LT;/h1>
+                  &LT;p>Press the icon to get notified &LT;i class="fas fa-bell fa-2x">&LT;/i>&LT;/p>
+                  
+                &LT;/div>
+              &LT;/div>
+            &LT;/div>
+            </code></pre>
+
+            <!-- Horizontal card -->
+            <h2 class="m-2">Horizontal card</h2>
+            <div class="card-container m-2">
+              <div class="card horizontal-card cards-shadow m-2 p-1">
+                <div class="card-details">
+                  <div class="card-image">
+                    <img src="../assests/pexels-mnz-1598505.jpg" alt="loading..">
+                  </div>
+                  <div class="product-desc">
+                    <h1>Nike Air V2</h1>
+                    <p>Price:1500 Matic</p>
+                  </div>
+                </div>
+                <i class="fas fa-shopping-cart fa-2x"></i>
+              </div>
+            </div>
+            <pre>
+              <code class="hljs">
+    &LT;div class="card horizontal-card cards-shadow m-2 p-1">
+    &LT;div class="card-details">
+      &LT;div class="card-image">
+        &LT;img src="../assests/pexels-mnz-1598505.jpg" alt="loading..">
+      &LT;/div>
+      &LT;div class="product-desc">
+        &LT;h1>Nike Air V2&LT;/h1>
+        &LT;p>Price:1500 Matic&LT;/p>
+      &LT;/div>
+    &LT;/div>
+    &LT;i class="fas fa-shopping-cart fa-2x">&LT;/i>
+  &LT;/div>      
+              </code>
+            </pre>
+          </div>
       </main>
     </div>
 
