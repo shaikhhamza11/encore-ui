@@ -13,8 +13,15 @@
   --color-grey: rgb(138, 130, 130);
   --color-warning: #82be10;
 
-  --container-width: 90%;
+  /* alerts */
+  --alert-text-color: #a1a1a1;
+  --alert-danger-light: #ffe0e3;
+  --alert-success-light: #b4e0c6;
+  --alert-warning-light: #d8e7b5;
+  --alert-dark: #4d4d4d;
 
+  --container-width: 90%;
+  --card-bodrder-color: rgba(0, 0, 0, 0.125);
   --xs: 480px;
   --sm: 640px;
   --md: 768px;

@@ -6,9 +6,9 @@
   width: 90%;
   padding: 1.5rem;
   position: relative;
-  border-left: 0.8rem solid #bababa;
-  background: #ededed;
-  color: #a1a1a1;
+  border-left: 0.8rem solid var(--color-grey);
+  background: var(--color-secondary-light);
+  color: var(--alert-txt-color);
   border-radius: 0.5rem;
   display: flex;
   align-items: center;
@@ -31,7 +31,7 @@
 
 .alert-danger {
   border-color: var(--color-danger);
-  background: #ffe0e3;
+  background: var(--alert-danger-light);
   color: var(--color-danger);
 }
 
@@ -42,18 +42,18 @@
 }
 .alert-info {
   border-color: var(--color-secondary);
-  background: #d7f0ff;
+  background: var(--alert-success-light);
   color: var(--color-secondary);
 }
 
 .alert-dark {
   border-color: var(--color-dark);
-  background: #4d4d4d;
+  background: var(--alert-dark);
   color: var(--color-light);
 }
 
 .alert-warning {
   border-color: var(--color-warning);
-  background: #d8e7b5;
+  background: var(--alert-warning-light);
   color: var(--color-warning);
 }
