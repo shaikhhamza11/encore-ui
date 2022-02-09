@@ -499,3 +499,43 @@
 .wrap {
   flex-wrap: wrap;
 }
+
+/* background colors */
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+.bg-dark {
+  background-color: var(--color-dark);
+  color: var(--txt-light);
+}
+.bg-danger {
+  background-color: var(--color-danger);
+}
+.bg-grey {
+  background-color: var(--color-grey);
+}
+.bg-success {
+  background-color: var(--color-success);
+}
+
+/* font-weight */
+
+.fw-1 {
+  font-weight: 300;
+}
+.fw-2 {
+  font-weight: 400;
+}
+.fw-3 {
+  font-weight: 500;
+}
+.fw-4 {
+  font-weight: 600;
+}
+.fw-5 {
+  font-weight: bold;
+}

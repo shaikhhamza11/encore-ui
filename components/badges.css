@@ -2,6 +2,7 @@
   margin: 2rem;
   border: 2px solid var(--color-secondary);
   min-height: 12rem;
+  width: 90%;
 }
 .badge-wrapper {
   position: relative;
@@ -9,6 +10,7 @@
 }
 .badge-wrapper > i {
   color: var(--color-primary);
+  cursor: pointer;
 }
 .badge {
   font-size: 2rem;
