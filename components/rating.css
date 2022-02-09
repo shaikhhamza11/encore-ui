@@ -1,0 +1,27 @@
+.rating-container {
+  width: 90%;
+  border: 2px solid var(--color-primary);
+}
+
+.star-rating {
+  direction: rtl;
+  display: inline-block;
+  padding: 2rem;
+}
+
+.star-rating input[type="radio"] {
+  display: none;
+}
+
+.star-rating label {
+  color: var(--color-grey);
+
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.star-rating label:hover,
+label:hover ~ label,
+input[type="radio"]:checked ~ label {
+  color: var(--color-secondary);
+}
