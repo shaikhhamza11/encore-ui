@@ -1,0 +1,42 @@
+.snackbar-container {
+  width: 90%;
+  border: 2px solid var(--color-secondary);
+  flex-direction: column;
+}
+
+.snackbar {
+  width: 50rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  position: relative;
+  margin: 1rem;
+  min-height: 4.5rem;
+  background-color: var(--color-primary);
+}
+.snackbar-container .snackbar h1 {
+  font-size: 2rem;
+}
+
+.snackbar-success {
+  background-color: var(--color-success);
+  color: var(--txt-light);
+}
+.snackbar-error {
+  background-color: var(--color-danger);
+  color: var(--txt-light);
+}
+.snackbar-info {
+  background-color: var(--alert-dark);
+  color: var(--txt-light);
+  padding: 0.5rem 1rem;
+}
+.snackbar-example {
+  display: none;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+#snackbar .snackbar-example h1 {
+  font-size: 2rem;
+}
