@@ -35,3 +35,23 @@ const btnDismiss = document.querySelector('#btn-dismiss')
 btnDismiss.addEventListener('click',(e)=>{
  cardDismiss.classList.add('dismiss')   
 })
+
+// snackbar
+
+const snackbarExample = document.querySelector('.snackbar-example')
+const snackbarOpen =  document.querySelector('#snackbar-open')
+const snackbarClose = document.querySelector('#snackbar-close')
+let setTimeoutId;
+snackbarOpen.addEventListener('click',()=>{
+    snackbarExample.style.display ="flex";
+     setTimeoutId =  setTimeout(() => {
+        snackbarExample.style.display = "none";
+    }, 3000);
+
+})
+
+snackbarClose.addEventListener('click',()=>{
+    console.log("clicked")
+    clearTimeout(setTimeoutId)
+    snackbarExample.style.display = "none";
+})
