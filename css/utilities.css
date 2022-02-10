@@ -521,48 +521,57 @@
 .bg-success {
   background-color: var(--color-success);
 }
+/* color */
+.grey {
+  color: var(--color-grey);
+}
 
 /* font-weight */
 
-.fw-1 {
+.fw-light {
   font-weight: 300;
 }
-.fw-2 {
+
+.fw-normal {
   font-weight: 400;
 }
-.fw-3 {
+
+.fw-medium {
   font-weight: 500;
 }
-.fw-4 {
+.fw-semi-bold {
   font-weight: 600;
 }
-.fw-5 {
+.fw-bold {
   font-weight: bold;
 }
-
-/* font-sizee */
-
-.fs-1 {
-  font-size: 1rem;
+.fw-ex-bold {
+  font-weight: 800;
 }
-.fs-2 {
+/* font-size */
+.fs-dxl {
+  font-size: 3.5rem;
+}
+.fs-xl {
+  font-size: 3.2rem;
+}
+.fs-l {
+  font-size: 2.5rem;
+}
+.fs-m {
   font-size: 2rem;
 }
-.fs-3 {
-  font-size: 3rem;
+.fs-s {
+  font-size: 1.5rem;
 }
-.fs-4 {
-  font-size: 4rem;
+.fs-xs {
+  font-size: 1rem;
 }
-.fs-5 {
-  font-size: 5rem;
+/* text transform  */
+
+.uppercase {
+  text-transform: uppercase;
 }
-.fs-6 {
-  font-size: 6rem;
-}
-.fs-7 {
-  font-size: 7rem;
-}
-.fs-8 {
-  font-size: 8rem;
+.lowercase {
+  text-transform: lowercase;
 }

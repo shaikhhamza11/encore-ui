@@ -2,7 +2,7 @@
 
 input[type="text"] {
   display: block;
-  width: 40rem;
+  width: 80rem;
   height: 4rem;
   background: transparent;
   border: solid 1px #ccc;
@@ -54,4 +54,7 @@ input[type="text"]:focus,
   background: var(--txt-light);
   color: var(--txt-danger);
   border: 2px solid var(--color-primary);
+}
+input[type="text"]:focus ~ span {
+  display: none;
 }
