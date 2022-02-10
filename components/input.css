@@ -17,6 +17,7 @@ input[type="text"] {
 }
 .input-container {
   border: 2px solid var(--color-primary);
+  width: 90%;
 }
 
 .input-group label {

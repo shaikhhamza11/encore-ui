@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Encore</title>
 
-    <link
+    <!-- <link
       rel="stylesheet"
       href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"
-    />
+    /> -->
+      <link rel="stylesheet" href="../prism/prism.css">
     <link rel="stylesheet" href="../css/encore.css" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script> -->
 
-    <script>
+    <!-- <script>
       hljs.highlightAll();
-    </script>
+    </script> -->
     <script
       src="https://kit.fontawesome.com/ea8d1510f0.js"
       crossorigin="anonymous"
@@ -56,11 +57,19 @@
             Copy the following css link in the head tag of your HTML document
             and the JS link before the closing body tag and you are good to go.
           </p>
-          
-          
+          <pre class="m-2 " ><code class="language-html selection" >
+&LT;!-- Add this in head --> 
+&LT;link rel="stylesheet"
+href="https://https://encoreui.netlify.app/components/index.css"/>
+
+&LT; Add this before body --->
+&LT;script src="https://https://encoreui.netlify.app/js/script.js">&LT;/script>
+
+          </code></pre>
         </section>
+        <!-- Utilities -->
         <section id="utilities">
-          <h2 class="fs-l fw-semi-bold m-2">Utilities</h2>
+          <h2 class="fs-dxl fw-semi-bold m-2">Utilities</h2>
           <p class="m-2 fs-m fw-medium">Some of the utilities classes you can use in your projects</p>
           <div class="rating-container m-2">
             <h1 class="m-2 fs-dxl">Padding and Margins</h1>
@@ -83,7 +92,7 @@
           </div>
         </section>
 
-                <!--Text utilities  -->
+        <!--Text utilities  -->
         <section id="text-utilities">
           <h1 class="m-2 fs-dxl uppercase">Text utilities</h1>
           <div class="rating-container m-2 ">
@@ -122,6 +131,8 @@
            
           </div>
         </section>
+
+        <!-- Navbar -->
         <section id="navbar">
           <h1 class="m-2 fs-dxl">Navigation</h1>
           <p class="m-3 fs-m fw-normal">Resposive Navbar with hamburger</p>
@@ -146,15 +157,43 @@
               </ul>
             </div>
           </nav>
+          <pre class="m-2">
+            <code class="language-html">
+  &LT;nav class="navbar ml-2">
+    &LT;div class="navbar-brand">
+      &LT;a>Encore UI&LT;/a>
+    &LT;/div>
+    &LT;a class="hamburger" id="toggleButton">
+      &LT;span class="bar">&LT;/span>
+      &LT;span class="bar">&LT;/span>
+      &LT;span class="bar">&LT;/span>
+    &LT;/a>
+    &LT;div class="navbar-links-container">
+      &LT;ul>
+        &LT;li class="navbar-links">&LT;a>Home&LT;/a>&LT;/li>
+        &LT;li class="navbar-links">
+          &LT;a>Documentation&LT;/a>
+        &LT;/li>
+        &LT;li class="navbar-links">
+          &LT;a>Contribute&LT;/a>
+        &LT;/li>
+      &LT;/ul>
+    &LT;/div>
+  &LT;/nav>
+            </code>
+
+
+          </pre>
          
           </section>
+          <!-- Buttons -->
         <section id="buttons">
           <h1 class="m-2 fs-dxl">Buttons</h1>
           <p class="m-3 fs-m fw-normal">
             You can also use this in combination Using two classes together
           </p>
 
-          <div class="button-container">
+          <div class="button-container m-2">
             <button class="btn">Button</button>
             <button class="btn btn-small">Small</button>
             <button class="btn btn-large">Large</button>
@@ -169,12 +208,28 @@
             <button class="btn btn-floating-danger-example">X</button>
             <button class="btn btn-dark btn-small">small-dark</button>
           </div>
+          <pre class="m-2"><code class="language-html">
+&LT;button class="btn">Button&LT;/button>
+&LT;button class="btn btn-small">Small&LT;/button>
+&LT;button class="btn btn-large">Large&LT;/button>
+&LT;button class="btn btn-primary">Primary&LT;/button>
+&LT;button class="btn btn-secondary">Secondary&LT;/button>
+&LT;button class="btn btn-danger">Danger&LT;/button>
+&LT;button class="btn btn-success">Success&LT;/button>
+&LT;button class="btn btn-light">Light&LT;/button>
+&LT;button class="btn btn-dark">Dark&LT;/button>
+&LT;button class="btn btn-outline">Outline&LT;/button>
+&LT;button class="btn btn-floating-example">+&LT;/button>
+&LT;button class="btn btn-floating-danger-example">X&LT;/button>
+&LT;button class="btn btn-dark btn-small">small-dark&LT;/button>
+          </code></pre>
 
           
           </section>
+          <!-- Alert -->
         <section id="alert">
           <h1 class="m-2 fs-dxl">Alert</h1>
-          <div class="alert-container">
+          <div class="alert-container m-2">
             <div class="alert">
               <div class="alert-icon">
                 <i class="fas fa-check-square"></i>
@@ -230,11 +285,69 @@
               </div>
             </div>
           </div>
+          <pre class="m-2"><code class="language-html">
+&LT;div class="alert">
+  &LT;div class="alert-icon">
+    &LT;i class="fas fa-check-square">&LT;/i>
+  &LT;/div>
+  &LT;div class="alert-content">Alert&LT;/div>
+  &LT;div class="alert-close">
+    &LT;i class="far fa-times-circle">&LT;/i>
+  &LT;/div>
+&LT;/div>
+&LT;div class="alert alert-success">
+  &LT;div class="alert-icon">
+    &LT;i class="fas fa-check-square">&LT;/i>
+  &LT;/div>
+  &LT;div class="alert-content">Success&LT;/div>
+  &LT;div class="alert-close">
+    &LT;i class="far fa-times-circle">&LT;/i>
+  &LT;/div>
+&LT;/div>
+&LT;div class="alert alert-danger">
+  &LT;div class="alert-icon">
+    &LT;i class="fas fa-skull-crossbones">&LT;/i>
+  &LT;/div>
+  &LT;div class="alert-content">Danger&LT;/div>
+  &LT;div class="alert-close">
+    &LT;i class="far fa-times-circle">&LT;/i>
+  &LT;/div>
+&LT;/div>
+&LT;div class="alert alert-info">
+  &LT;div class="alert-icon">
+    &LT;i class="fas fa-check-square" >&LT;/i>
+  &LT;/div>
+  &LT;div class="alert-content">Song added to queue&LT;/div>
+  &LT;div class="alert-close">
+    &LT;i class="far fa-times-circle" id="alert-info">&LT;/i>
+  &LT;/div>
+&LT;/div>
+&LT;div class="alert alert-warning">
+  &LT;div class="alert-icon">
+    &LT;i class="fas fa-exclamation-circle">&LT;/i>
+  &LT;/div>
+  &LT;div class="alert-content">Warning&LT;/div>
+  &LT;div class="alert-close">
+    &LT;i class="far fa-times-circle">&LT;/i>
+  &LT;/div>
+&LT;/div>
+&LT;div class="alert alert-dark">
+  &LT;div class="alert-icon">
+    &LT;i class="fas fa-exclamation-circle">&LT;/i>
+  &LT;/div>
+  &LT;div class="alert-content">Dark alert&LT;/div>
+  &LT;div class="alert-close">
+    &LT;i class="far fa-times-circle">&LT;/i>
+  &LT;/div>
+&LT;/div>
+
+          </code></pre>
          
         </section>
+        <!-- Input -->
         <section id="input">
           <h1 class="m-2 fs-dxl">Inputs</h1>
-          <div class="input-container">
+          <div class="input-container m-2">
             <div class="input-group m-2">
               <input type="text" class="input" placeholder="Normal Input" />
             </div>
@@ -248,8 +361,24 @@
               <span class="error-text mt-1">Wrong password</span>
             </div>
           </div>
+          <pre class="m-2"><code class="language-html">
+ &LT;div class="input-group m-2">
+    &LT;input type="text" class="input" placeholder="Normal Input" />
+  &LT;/div>
+  &LT;div class="input-group m-2">
+    &LT;input type="text" name="full-name" class="styled-input" />
+    &LT;label for="full-name">Username&LT;/label>
+  &LT;/div>
+  &LT;div class="input-group m-2">
+    &LT;input type="text" name="password" class="error-input mb-1" />
+    &LT;label for="full-name">Password&LT;/label>
+    &LT;span class="error-text mt-1">Wrong password&LT;/span>
+&LT;/div>
+          </code></pre>
           
         </section>
+
+        <!-- Avatar -->
         <section id="avatar">
           <h1 class="m-4 fs-dxl">Avatar</h1>
           <div class="avatar-container">
@@ -294,7 +423,50 @@
             </div>
           </div>
          
+          <pre class="m-2"><code class="language-html">
+   &LT;div>
+    &LT;div class="avatar avatar-initials">HS&LT;/div>
+    &LT;p class="fs-m fw-normal">Avatar Initials&LT;/p>
+  &LT;/div>
+  &LT;div>
+    &LT;img
+      src="../assests/avatar/ronaldo.jfif"
+      alt="loading"
+      class="avatar"
+    />
+    &LT;p class="fs-m fw-normal">Avatar&LT;/p>
+  &LT;/div>
+
+  &LT;div>
+    &LT;img
+      src="../assests/avatar/ronaldo.jfif"
+      alt="loading"
+      class="avatar avatar-small"
+    />
+    &LT;p class="fs-m fw-normal">Avatar small&LT;/p>
+  &LT;/div>
+  &LT;div>
+    &LT;img
+      loading="lazy"
+      src="../assests/avatar/ronaldo.jfif"
+      alt="loading"
+      class="avatar avatar-large"
+    />
+    &LT;p class="fs-m fw-normal">Avatar large&LT;/p>
+  &LT;/div>
+  &LT;div>
+    &LT;img
+      src="../assests/avatar/ronaldo.jfif"
+      alt="loading"
+      srcset=""
+      class="avatar avatar-xl"
+    />
+    &LT;p class="fs-m fw-normal">Avatar x-large&LT;/p>
+  &LT;/div>
+          </code></pre>
+
         </section>
+        <!-- Badges -->
         <section id="badges">
           <h1 class="m-4 fs-dxl">Badges</h1>
           <h2 class="m-4 fs-xl">Badges with Icon</h4>
@@ -317,6 +489,25 @@
               <i class="fas fa-bell fa-2x"></i>
             </div>
           </div>
+          <pre class="m-2"><code class="language-html">
+  &LT;div class="badge-wrapper">
+    &LT;span class="badge">3&LT;/span>
+    &LT;i class="fas fa-shopping-cart fa-2x">&LT;/i>
+  &LT;/div>
+  &LT;div class="badge-wrapper">
+    &LT;span class="badge">101&LT;/span>
+    &LT;i class="fas fa-envelope fa-2x">&LT;/i>
+  &LT;/div>
+
+  &LT;div class="badge-wrapper">
+    &LT;span class="badge">14&LT;/span>
+    &LT;i class="fas fa-phone-square-alt fa-2x">&LT;/i>
+  &LT;/div>
+  &LT;div class="badge-wrapper">
+    &LT;span class="badge">20&LT;/span>
+    &LT;i class="fas fa-bell fa-2x">&LT;/i>
+  &LT;/div>
+          </code></pre>
           <h2 class="m-4 fs-xl">Badges with Avatar</h2>
           <div class="badge-container flex justify-sa align-center wrap">
             <div class="badge-wrapper">
@@ -338,6 +529,26 @@
               <p class="fs-m fw-normal">Offline</p>
             </div>
           </div>
+          <pre class="m-2"><code class="language-html">
+   &LT;div class="badge-wrapper">
+    &LT;img
+      src="../assests/avatar/ronaldo.jfif"
+      alt="loading"
+      class="avatar"
+    />
+    &LT;span class="badge badge-avatar badge-online">&LT;/span>
+    &LT;p class="fs-m fw-normal">Online&LT;/p>
+  &LT;/div>
+  &LT;div class="badge-wrapper">
+    &LT;img
+      src="../assests/avatar/ronaldo.jfif"
+      alt="loading"
+      class="avatar"
+    />
+    &LT;span class="badge badge-avatar badge-offline">&LT;/span>
+    &LT;p class="fs-m fw-normal">Offline&LT;/p>
+  &LT;/div>
+          </code></pre>
           <h2 class="m-4 fs-xl">Badges with Buttons</h2>
           <div class="badge-container flex justify-sa align-center wrap">
             <div class="badge-wrapper">
@@ -349,8 +560,19 @@
               <span class="badge badge-online">12</span>
             </div>
           </div>
+          <pre class="m-2"><code class="language-html">
+  &LT;div class="badge-wrapper">
+    &LT;button class="btn btn-danger">Danger&LT;/button>
+    &LT;span class="badge">12&LT;/span>
+  &LT;/div>
+  &LT;div class="badge-wrapper">
+    &LT;button class="btn btn-success">Success&LT;/button>
+    &LT;span class="badge badge-online">12&LT;/span>
+  &LT;/div>
+          </code></pre>
           
         </section>
+        <!-- Images -->
         <section id="images">
           <h1 class="m-4 fs-dxl">Images</h1>
           <div class="image-container ml-2">
@@ -366,8 +588,23 @@
               class="responsive-image responsive-round-image"
             />
           </div>
+          <pre class="m-2"><code class="language-html">
+  &LT;img
+  src="../assests/peter-thomas-5aeNKDUaDmY-unsplash.jpg"
+  alt="Loading..."
+  class="responsive-image"
+/>
+
+&LT;img
+  src="../assests/peter-thomas-5aeNKDUaDmY-unsplash.jpg"
+  alt="Loading..."
+  class="responsive-image responsive-round-image"
+/>
+
+          </code></pre>
           
         </section>
+        <!-- Modal -->
         <section id="modal">
           <h1 class="m-4 fs-dxl">Modal</h1>
           <div class="btn" id="show-modal">Show Modal</div>
@@ -380,35 +617,70 @@
               </div>
             </div>
           </div>
+<pre class="m-2"><code class="language-html">
+  &LT;div class="btn" id="show-modal">Show Modal&LT;/div>
+&LT;div class="modal-overlay" id="modal-toggle">
+  &LT;div class="modal-container p-2">
+    &LT;h1 class="fs-dxl">Delete all items?&LT;/h1>
+    &LT;div class="p-1 flex justify-sa">
+      &LT;button class="btn btn-success" id="modal-confirm">Sure&LT;/button>
+      &LT;button class="btn btn-danger" id="modal-close">Close&LT;/button>
+    &LT;/div>
+  &LT;/div>
+&LT;/div>
 
+</code></pre>
           <p class="m-2 p-2 fs-m fw-normal">Add this code inside your body</p>
           
         </section>
 
+       <!-- Grid -->
         <section id="simplified-grid">
           <h1 class="m-4 fs-dxl">Simplified Grid</h1>
           <h2 class="center fs-xl">Responsive Grid with two columns</h2>
-          <div class="grid-container lap-two mob-one m-3">
+          <div class="grid-container lap-two mob-one m-2">
             <div class="grid-content"></div>
             <div class="grid-content"></div>
           </div>
           <h2 class="center fs-xl">Responsive Grid with three columns</h2>
-            <div class="grid-container lap-three tab-two mob-one m-3">
+            <div class="grid-container lap-three tab-two mob-one m-2">
             
             <div class="grid-content"></div>
             <div class="grid-content"></div>
             <div class="grid-content"></div>
           </div>
           <h2 class="center fs-xl">Responsive Grid with four columns</h2>
-            <div class="grid-container lap-four tab-two mob-one m-3">
+            <div class="grid-container lap-four tab-two mob-one m-2">
             
             <div class="grid-content"></div>
             <div class="grid-content"></div>
             <div class="grid-content"></div>
             <div class="grid-content"></div>
           </div>
+
+          <pre class="m-2"><code class="language-html">
+&LT;div class="grid-container lap-two mob-one m-3">
+  &LT;div class="grid-content">&LT;/div>
+  &LT;div class="grid-content">&LT;/div>
+&LT;/div>
+&LT;div class="grid-container lap-three tab-two mob-one m-3">
+  &LT;div class="grid-content">&LT;/div>
+  &LT;div class="grid-content">&LT;/div>
+  &LT;div class="grid-content">&LT;/div>
+&LT;/div>
+
+&LT;div class="grid-container lap-four tab-two mob-one m-3">
+  &LT;div class="grid-content">&LT;/div>
+  &LT;div class="grid-content">&LT;/div>
+  &LT;div class="grid-content">&LT;/div>
+  &LT;div class="grid-content">&LT;/div>
+&LT;/div>
+
+          </code></pre>
          
         </section>
+
+        <!-- Cards -->
         <section id="cards">
           <h1 class="m-4 fs-dxl">Cards</h1>
           <div class="card-container lap-four tab-two mob-one m-2">
@@ -428,12 +700,28 @@
                 <h3>Card with text</h3>
                 <p class="fs-m fw-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil consequuntur sit qui quod quaerat reprehenderit.s</p>
               </div>
+          </div>
+          <pre class="m-2"><code class="language-html">
+ &LT;div class="card-text bg-primary cards-shadow">
+    &LT;h3 class="fs-l">Card with text &LT;/h3>
+    &LT;p class="fs-m fw-normal">Your text&LT;/p>
+  &LT;/div>
+  &LT;div class="card-text bg-grey cards-shadow">
+    &LT;h3>Card with text&LT;/h3>
+    &LT;p class="fs-m fw-normal">Your text&LT;/p>
+  &LT;/div>
+  &LT;div class="card-text bg-danger cards-shadow">
+    &LT;h3>Card with text&LT;/h3>
+    &LT;p class="fs-m fw-normal">Your text&LT;/p>
+  &LT;/div>
+  &LT;div class="card-text bg-success cards-shadow">
+    &LT;h3>Card with text&LT;/h3>
+    &LT;p class="fs-m fw-normal">Your text&LT;/p>
+  &LT;/div>
+          </code></pre>
           
           
-            </div>
-            
-            
-            <!-- Images card and badge -->
+          <!-- Images card and badge -->
             <div class="card-container lap-three mob-one m-2" >
               <div class="card image-card cards-shadow">
                 <h3 class="center fw-5">Image card</h3>
@@ -461,6 +749,32 @@
               </div>
               
             </div>
+            <pre class="m-2"><code class="language-html">
+  &LT;div class="card image-card cards-shadow">
+    &LT;h3 class="center fw-5">Image card&LT;/h3>
+    &LT;img class="responsive-image"
+     src="../assests/peter-thomas-5aeNKDUaDmY-unsplash.jpg">
+     &LT;p class="fs-m fw-normal">Your text&LT;/p>
+  &LT;/div>
+  &LT;div class="card image-card image-badge cards-shadow">
+    &LT;h3 class="center fw-5">Image card&LT;/h3>
+    &LT;img class="responsive-image"
+     src="../assests/pexels-mnz-1598505.jpg">
+     &LT;p class="fs-m fw-normal">Image card with badge&LT;/p>
+     &LT;p class="fs-m fw-normal">Your text&LT;/p>
+     &LT;i class="fas fa-heart fa-4x">&LT;/i>
+  &LT;/div>
+  
+  &LT;div class="card image-card cards-shadow" id="card-dismiss">
+    &LT;h3 class="center fw-5">Image card 
+      &LT;span>&LT;i class="far fa-times-circle fa-2x pr-1" id="btn-dismiss">&LT;/i>&LT;/span>
+    &LT;/h3>
+    &LT;img class="responsive-image"
+     src="../assests/peter-thomas-5aeNKDUaDmY-unsplash.jpg">
+     &LT;p class="fs-m fw-normal">Image card with dissmiss&LT;/p>
+     &LT;p class="fs-m fw-normal">Youre text&LT;/p>
+  &LT;/div>
+            </code></pre>
            
 
             <!-- Text overlays and badge -->
@@ -487,6 +801,29 @@
                 </div>
               </div>
             </div>
+            <pre class="m-2"><code class="language-html">
+              &LT;div class="card card-overlay cards-shadow mt-2 ">
+    &LT;img 
+    src="../assests/pexels-mnz-1598505.jpg" alt="loading"
+    class="responsive-image"
+    >
+    &LT;div class="text-overlay">
+      &LT;h1 class="fs-dxl">Coming soon&LT;/h1>
+    &LT;/div>
+  &LT;/div>
+  &LT;div class="card card-overlay cards-shadow m-2">
+    &LT;img 
+    src="../assests/pexels-mnz-1598505.jpg" alt="loading"
+    class="responsive-image"
+    >
+    &LT;div class="text-overlay">
+      &LT;h1 class="fs-dxl">Out Of stock&LT;/h1>
+      &LT;p class="fs-m fw-normal">Press the icon to get notified 
+      &LT;i class="fas fa-bell fa-2x">&LT;/i>&LT;/p>
+      
+    &LT;/div>
+  &LT;/div>
+            </code></pre>
             
 
             <!-- Horizontal card -->
@@ -504,10 +841,24 @@
                 </div>
                 <i class="fas fa-shopping-cart fa-2x"></i>
               </div>
+              <pre class="m-2"><code class="language-html">
+  &LT;div class="card horizontal-card cards-shadow m-2 p-1">
+    &LT;div class="card-details">
+      &LT;div class="card-image">
+        &LT;img src="../assests/pexels-mnz-1598505.jpg" alt="loading..">
+      &LT;/div>
+      &LT;div class="product-desc">
+         &LT;h1 class="fs-dxl">Nike Air V2&LT;/h1>
+        &LT;p class="fs-m fw-normal">Price:1500 Matic&LT;/p>
+      &LT;/div>
+    &LT;/div>
+    &LT;i class="fas fa-shopping-cart fa-2x">&LT;/i>
+  &LT;/div>
+              </code></pre>
             </div>
             
           </section>
-        
+        <!-- Rating -->
         <section id="rating">
           <h1 class="m-2 fs-dxl">Rating </h1>
           <p class="m-2 fs-m">You can use diffrent font-size utilities classes for the size of rating components</p>
@@ -535,9 +886,34 @@
               </label>
             </div>
           </div>
+          <pre class="m-2"><code class="language-html">
+  &LT;div class="star-rating fs-dxl">
+    &LT;input id="star-5" type="radio" name="rating" value="star-5" />
+    &LT;label for="star-5" title="5 stars">
+      &LT;i class="active fa fa-star" aria-hidden="true">&LT;/i>
+    &LT;/label>
+    &LT;input id="star-4" type="radio" name="rating" value="star-4" />
+    &LT;label for="star-4" title="4 stars">
+      &LT;i class="active fa fa-star" aria-hidden="true">&LT;/i>
+    &LT;/label>
+    &LT;input id="star-3" type="radio" name="rating" value="star-3" />
+    &LT;label for="star-3" title="3 stars">
+      &LT;i class="active fa fa-star" aria-hidden="true">&LT;/i>
+    &LT;/label>
+    &LT;input id="star-2" type="radio" name="rating" value="star-2" />
+    &LT;label for="star-2" title="2 stars">
+      &LT;i class="active fa fa-star" aria-hidden="true">&LT;/i>
+    &LT;/label>
+    &LT;input id="star-1" type="radio" name="rating" value="star-1" />
+    &LT;label for="star-1" title="1 star">
+      &LT;i class="active fa fa-star" aria-hidden="true">&LT;/i>
+    &LT;/label>
+  &LT;/div>
+          </code></pre>
           
         </section>
 
+        <!-- Snackbar -->
         <section id="snackbar">
           <h1 class="m-2 fs-dxl">Snackbar/Toast</h1>
           <p class="m-2 fs-m fw-normal">Use class name snackbar and add classes snackbar-success, snackbar-error, snackbar-info for different types of snackbar/toast.</p>
@@ -559,6 +935,24 @@
               <i class="far fa-times-circle fa-2x"></i>
             </div>
           </div>
+          <pre class="m-2"><code class="language-html">
+  &LT;div class="snackbar  flex justify-sb align-center">
+    &LT;h1 class="fs-m">Normal Snackbar&LT;/h1>
+    &LT;i class="far fa-times-circle fa-2x">&LT;/i>
+  &LT;/div>
+  &LT;div class="snackbar snackbar-success flex justify-sb align-center">
+    &LT;h1 class="fs-m"> Added to cart&LT;/h1>
+    &LT;i class="far fa-times-circle fa-2x">&LT;/i>
+   &LT;/div>
+  &LT;div class="snackbar snackbar-error flex justify-sb align-center">
+    &LT;h1 class="fs-m">Out of stock&LT;/h1>
+    &LT;i class="far fa-times-circle fa-2x">&LT;/i>
+  &LT;/div>
+  &LT;div class="snackbar snackbar-info flex justify-sb align-center">
+    &LT;h1 class="fs-m">Song added to queue &LT;/h1>
+    &LT;i class="far fa-times-circle fa-2x">&LT;/i>
+  &LT;/div>
+          </code></pre>
           <h1 class="m-2 fs-dxl">Example</h1>
           <div class="snackbar-container m-2 p-2">
             <button class="btn btn-primary" id="snackbar-open">Add to cart</button>
@@ -571,6 +965,7 @@
            
           </section>
 
+          <!-- List -->
         <section id="list">
           <h1 class="m-2 fs-dxl">Lists</h1>
           <div class="list-container m-2">
@@ -582,20 +977,37 @@
               <li class="list-item spaced-list-item">List item 4</li>
 
           </ul>
+          <pre class="m-2"><code class="language-html">
+  &LT;ul class="spaced-list flex justify-sa wrap p-1 m-1">
+    &LT;li class="list-item spaced-list-item">List item 1&LT;/li>
+    &LT;li class="list-item spaced-list-item">List item 2&LT;/li>
+    &LT;li class="list-item spaced-list-item">List item 3&LT;/li>
+    &LT;li class="list-item spaced-list-item">List item 4&LT;/li>
+
+  &LT;/ul>
+          </code></pre>
           <h3 class="m-2 fs-m ">Stacked</h3>
           <ul class="stacked-list p-1 m-1">
-            <li class="list-item stacked-list-item p-1"> <img class="avatar-xsm round-img" src="./assets/profile.webp" alt="">Notification 1</li>
-            <li class="list-item stacked-list-item"> <img class="avatar-xsm round-img" src="./assets/profile.webp" alt="">Notification 2</li>
-            <li class="list-item stacked-list-item"> <img class="avatar-xsm round-img" src="./assets/profile.webp" alt="">Notification 3</li>
-            <li class="list-item stacked-list-item"> <img class="avatar-xsm round-img" src="./assets/profile.webp" alt="">Notification 4</li>
+            <li class="list-item stacked-list-item p-1"> Notification 1</li>
+            <li class="list-item stacked-list-item">Notification 2</li>
+            <li class="list-item stacked-list-item">Notification 3</li>
+            <li class="list-item stacked-list-item">Notification 4</li>
 
-        </ul>
+         </ul>
+         <pre class="m-2"><code class="language-html">
+&LT;ul class="stacked-list p-1 m-1">
+  &LT;li class="list-item stacked-list-item p-1"> Notification 1&LT;/li>
+  &LT;li class="list-item stacked-list-item">Notification 2&LT;/li>
+  &LT;li class="list-item stacked-list-item">Notification 3&LT;/li>
+  &LT;li class="list-item stacked-list-item">Notification 4&LT;/li> 
+&LT;/ul>
+         </code></pre>
           </div>
          
         </section>
       </main>
     </div>
-
+    <script src="../prism/prism.js"></script>
     <script src="../js/script.js"></script>
   </body>
 </html>
