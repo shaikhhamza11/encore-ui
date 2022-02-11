@@ -107,6 +107,7 @@ main {
   align-items: center;
   min-height: 200px;
   border: 2px solid var(--color-primary);
+  width: 90%;
 }
 
 /* navbar example */

@@ -575,3 +575,8 @@
 .lowercase {
   text-transform: lowercase;
 }
+/* selecttion */
+
+::selection {
+  color: var(--color-secondary-light);
+}
