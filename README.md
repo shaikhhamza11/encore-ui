@@ -8,12 +8,12 @@
   To use this component library copy this `link` from here and paste it in the `head` tag of your html file and the `script` before body tag
   ```html
 <!-- Css -->
-<link rel="stylesheet" href="https://https://encoreui.netlify.app/components/index.css"/>
+<link rel="stylesheet" href="https://encoreui.netlify.app/components/index.css"/>
 ```
 
 ```html
 <!-- Js -->
-<script src="https://https://encoreui.netlify.app/js/script.js"></script>
+<script src="https://encoreui.netlify.app/js/script.js"></script>
 ```
 
 Visit [docs](https://encoreui.netlify.app/html/encore.html) to learn more.
