@@ -21,6 +21,4 @@ a {
   text-decoration: none;
   color: var(--secondary-color);
 }
-body {
-  background-color: var(--color-light);
-}
+
